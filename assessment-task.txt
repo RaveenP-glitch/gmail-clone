@@ -1,0 +1,59 @@
+Task:
+Develop a React application to display Gmail emails using the IMAP protocol, integrating with
+a Node.js back-end and storing user data in a MySQL database.
+Detailed Description:
+Objective:
+To build a full-stack application that allows users to:
+1. 2. 3. Authenticate with their Gmail account.
+Retrieve and display emails using the IMAP protocol.
+Store relevant user and email metadata in a MySQL database for quick access and
+historical data.
+Project Structure:
+1. Front-end (React.js with Tailwind CSS)
+●
+●
+Technology: React.js, Tailwind CSS.
+Features:
+○
+Authentication: Front-end UI to authenticate users via OAuth2 for Gmail.
+○
+Email Display: UI to display Gmail emails in a responsive, styled format using
+Tailwind.
+○
+Pagination/Search: Allow users to navigate through emails and search specific
+ones.
+○
+Error Handling: User-friendly messages for errors like connection issues or invalid
+credentials.
+2. Back-end (Node.js)
+●
+●
+Technology: Node.js (with Express framework).
+Modules:
+○
+IMAP Protocol: Use suitable library to connect to Gmail and fetch emails.
+○
+OAuth2 Integration: Handle Gmail OAuth2 flow to enable secure authentication.
+○
+API Layer: Build REST APIs for the front-end to fetch emails, user data, and
+metadata.
+○
+Error Handling: Implement robust error-handling middleware.
+○
+Security: Sanitize inputs and secure connections.
+3. Database (MySQL)
+●
+●
+Technology: MySQL database.
+Usage:
+○
+○
+○
+○
+Store user data: Authentication tokens, user preferences.
+Store email metadata: Email IDs, sender details, timestamps, subject lines.
+Use an ORM like Sequelize to interact with the database.
+Index email metadata to allow faster search and retrieval.
+Outcome:
+A full-stack Gmail IMAP viewer that securely connects to Gmail, fetches emails, and provides a
+user-friendly interface for browsing emails while leveraging a robust back-end and database.
