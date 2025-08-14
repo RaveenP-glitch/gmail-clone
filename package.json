@@ -1,0 +1,41 @@
+{
+  "name": "gmail-clone",
+  "version": "1.0.0",
+  "description": "A full-stack Gmail IMAP viewer application built with React, Node.js, Express, and MySQL",
+  "scripts": {
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd frontend && npm install",
+    "install-all": "npm run install-backend && npm run install-frontend",
+    "start-backend": "cd backend && npm start",
+    "start-frontend": "cd frontend && npm start",
+    "dev-backend": "cd backend && npm run dev",
+    "dev-frontend": "cd frontend && npm start",
+    "build-frontend": "cd frontend && npm run build",
+    "dev": "concurrently \"npm run dev-backend\" \"npm run dev-frontend\"",
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "gmail",
+    "imap",
+    "email",
+    "react",
+    "nodejs",
+    "express",
+    "mysql",
+    "oauth2",
+    "full-stack"
+  ],
+  "author": "Gmail Clone Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/gmail-clone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/gmail-clone/issues"
+  },
+  "homepage": "https://github.com/your-username/gmail-clone#readme"
+} 
